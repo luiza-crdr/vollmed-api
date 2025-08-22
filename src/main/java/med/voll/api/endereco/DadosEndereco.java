@@ -15,14 +15,14 @@ public record DadosEndereco(
     @Pattern(regexp = "\\d{8}")
     String cep, 
 
-    @NotBlank
-    String cidade, 
+    String complemento, 
+
+    String numero,
 
     @NotBlank
     String uf, 
-
-    String complemento, 
-
-    String numero) {
+    
+    @NotBlank
+    String cidade) {
     
 }
